@@ -85,7 +85,7 @@
             <objects>
                 <viewController id="27U-nc-gkw" customClass="FeedViewController" customModule="parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sQf-uG-Hq0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RdM-JO-qu0">
@@ -147,6 +147,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="oFb-lk-Vrc">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="mmL-Kt-iHQ"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="41f-3o-IvQ">
                             <connections>
                                 <segue destination="xfd-PA-1qp" kind="presentation" id="aM7-to-fuN"/>
@@ -212,10 +213,10 @@
         <!--Navigation Controller-->
         <scene sceneID="9tz-d0-ggC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wMz-Fw-8OV" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="wMz-Fw-8OV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4n5-LI-CJJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
